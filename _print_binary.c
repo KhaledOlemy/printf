@@ -10,6 +10,11 @@ int _print_binary(unsigned int n)
 	int i = 0, j;
 	unsigned int binary[64], l = 0;
 
+	if (n == 0)
+	{
+		_putchar(0 + '0');
+		return(1);
+	}
 	while (n > 0)
 	{
 		binary[i] = n % 2;
