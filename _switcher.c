@@ -33,16 +33,16 @@ int _switcher(const char *s, int i, va_list item, int len)
 		len += _unsigned_checker(va_arg(item, unsigned int));
 		break;
 	case 'x':
-		len += _print_hexa(va_arg(item, unsigned int), HEX_MAX_DIV, 0, 'x');
+		len += _print_hexa(va_arg(item, unsigned int), 268435456, 0, 'x');
 		break;
 	case 'X':
-		len += _print_hexa(va_arg(item, unsigned int), HEX_MAX_DIV, 0, 'X');
+		len += _print_hexa(va_arg(item, unsigned int), 268435456, 0, 'X');
 		break;
 	case 'b':
 		len += _print_binary(va_arg(item, int));
 		break;
 	case 'o':
-		len += _print_octal(va_arg(item, unsigned int), OCT_MAX_DIV, 0);
+		len += _print_octal(va_arg(item, unsigned int), 1073741824, 0);
 		break;
 	default:
 		_putchar('%');

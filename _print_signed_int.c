@@ -20,7 +20,7 @@ int _print_signed_int(int num)
 	{
 		_putchar(0 + '0');
 	}
-	temp = _print_int((unsigned int) num, DEC_MAX_DIV, 0);
+	temp = _print_int((unsigned int) num, 1000000000, 0);
 	if (temp == 0)
 	{
 		l += 1;

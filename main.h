@@ -5,9 +5,6 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <limits.h>
-#define HEX_MAX_DIV 268435456
-#define OCT_MAX_DIV 1073741824
-#define DEC_MAX_DIV 1000000000
 int _printf(const char *format, ...);
 int _putchar(char c);
 int _print_hex_item(int num, char casing);
