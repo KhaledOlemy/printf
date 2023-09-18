@@ -30,7 +30,7 @@ int _switcher(const char *s, int i, va_list item, int len)
 		len += _print_signed_int(va_arg(item, int));
 		break;
 	case 'u':
-		len += _print_int(va_arg(item, unsigned int), 1000000000, 0);
+		len += unsigned_checker(va_arg(item, unsigned int));
 		break;
 	case 'x':
 		len += _print_hexa(va_arg(item, unsigned int), 268435456, 0, 'x');
