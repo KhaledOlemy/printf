@@ -41,6 +41,9 @@ int _switcher(const char *s, int i, va_list item, int len)
 	case 'b':
 		len += _print_binary(va_arg(item, int));
 		break;
+	case 'o':
+		len += _print_octal(va_arg(item, unsigned int), 1073741824, 0);
+		break;
 	default:
 		_putchar('%');
 		_putchar(s[i + 1]);
