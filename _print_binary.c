@@ -13,7 +13,7 @@ int _print_binary(unsigned int n)
 	if (n == 0)
 	{
 		_putchar(0 + '0');
-		return(1);
+		return (1);
 	}
 	while (n > 0)
 	{
