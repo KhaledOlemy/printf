@@ -8,7 +8,11 @@
 int _print_string(char *s)
 {
 	int i = 0;
-
+	if (!s)
+	{
+		_print_string("(null)");
+		return (6);
+	}
 	while (s[i] != '\0')
 	{
 		_putchar(s[i]);
