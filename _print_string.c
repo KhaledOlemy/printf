@@ -14,5 +14,5 @@ int _print_string(char *s)
 		_putchar(s[i]);
 		i++;
 	}
-	return i;
+	return (i);
 }

@@ -9,6 +9,7 @@
 int _print_signed_int(int num)
 {
 	int l = 0;
+
 	if (num < 0)
 	{
 		_putchar('-');

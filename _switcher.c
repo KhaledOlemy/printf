@@ -5,14 +5,14 @@
  * @s: input <format string> to pickup the specifier from
  * @i: index on which we're standing
  * @item: va_list item to pickup the value from va arguments
- * @flag: to return back where there were double %% or not
- * to return the right string length
+ * @len: to determine string length
  *
  * Return: (0) always success
  */
 int _switcher(const char *s, int i, va_list item, int len)
 {
 	int flags = 0;
+
 	switch (s[i + 1])
 	{
 	case 'c':
