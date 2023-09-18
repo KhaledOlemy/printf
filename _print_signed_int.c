@@ -16,6 +16,10 @@ int _print_signed_int(int num)
 		l += 1;
 		num *= -1;
 	}
+	else if (num == 0)
+	{
+		_putchar(0 + '0');
+	}
 	temp = _print_int((unsigned int) num, 100000000, 0);
 	if (temp == 0)
 	{
