@@ -13,6 +13,10 @@ int _printf(const char *format, ...)
 	int i = 0, len = 0;
 	va_list iterator;
 
+	if (!format)
+	{
+		return (0);
+	}
 	va_start(iterator, format);
 	while (format[i] != '\0')
 	{
