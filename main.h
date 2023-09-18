@@ -13,4 +13,5 @@ int _print_signed_int(int n);
 int _print_string(char *s);
 int _switcher(const char *s, int i, va_list item, int len);
 int _print_binary(unsigned int n);
+int _print_octal(unsigned int num, unsigned int iter, int flag);
 #endif
