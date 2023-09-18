@@ -8,6 +8,7 @@
 int _print_string(char *s)
 {
 	int i = 0;
+
 	if (!s)
 	{
 		_print_string("(null)");
