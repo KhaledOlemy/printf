@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * unsigned_checker - checks if input num is NULL or not
+ * _unsigned_checker - checks if input num is NULL or not
  * and takes action based on that
  * @num: input number to be printed
  *
  * Return: length of characters printed
 */
-int unsigned_checker(unsigned int num)
+int _unsigned_checker(unsigned int num)
 {
 	int len = 0;
 
