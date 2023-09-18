@@ -10,19 +10,21 @@
  *
  * Return: (0) always success
  */
-int _switcher(const char *s, int i, va_list item, int flag)
+int _switcher(const char *s, int i, va_list item, int len)
 {
+	int flags = 0;
 	switch (s[i + 1])
 	{
 	case 'c':
 		_putchar(va_arg(item, int));
+		flags += 1;
 		break;
 	case 's':
-		_print_string(va_arg(item, char *));
+		len += _print_string(va_arg(item, char *));
 		break;
 	case '%':
-		flag += 1;
 		_putchar('%');
+		flags += 1;
 		break;
 	case 'd': case 'i':
 		_print_signed_int(va_arg(item, int));
@@ -44,5 +46,5 @@ int _switcher(const char *s, int i, va_list item, int flag)
 		_putchar(s[i + 1]);
 		break;
 	}
-	return (flag);
+	return (len + flags - 2);
 }

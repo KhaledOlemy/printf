@@ -10,7 +10,7 @@
  */
 int _printf(const char *format, ...)
 {
-	int i = 0, flag = 0;
+	int i = 0, len = 0;
 	va_list iterator;
 
 	va_start(iterator, format);
@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			flag = _switcher(format, i, iterator, flag);
+			len = _switcher(format, i, iterator, len);
 			i += 2;
 		}
 		else
@@ -28,9 +28,5 @@ int _printf(const char *format, ...)
 		}
 	}
 	va_end(iterator);
-	if (flag == 0)
-	{
-		return (i);
-	}
-	return (i - 1);
+	return (len + i);
 }

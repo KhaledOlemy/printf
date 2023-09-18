@@ -3,7 +3,7 @@
  * _print_string - sub function of _printf to print strings
  * @s: input string to print
  *
- * Return: (0) always success
+ * Return: length of the input string
  */
 int _print_string(char *s)
 {
@@ -14,5 +14,5 @@ int _print_string(char *s)
 		_putchar(s[i]);
 		i++;
 	}
-	return (0);
+	return i;
 }

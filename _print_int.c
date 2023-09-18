@@ -11,6 +11,8 @@
  */
 int _print_int(unsigned int num, unsigned int iter, int flag)
 {
+	int l = 0;
+
 	if (iter != 1)
 	{
 		iter /= 10;
@@ -23,6 +25,7 @@ int _print_int(unsigned int num, unsigned int iter, int flag)
 			flag = 1;
 			if (num / iter == 0)
 			{
+				l += 1;
 				_putchar(0 + '0');
 			}
 			else
@@ -31,15 +34,17 @@ int _print_int(unsigned int num, unsigned int iter, int flag)
 				{
 					_putchar((num / iter) / 10 + '0');
 					_putchar((num / iter) % 10 + '0');
+					l += 2;
 				}
 				else
 				{
 					_putchar((num / iter) + '0');
+					l += 1;
 				}
 			}
 			num %= iter;
 			_print_int(num, iter, 1);
 		}
 	}
-	return (0);
+	return (l);
 }

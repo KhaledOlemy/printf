@@ -8,11 +8,13 @@
  */
 int _print_signed_int(int num)
 {
+	int l = 0;
 	if (num < 0)
 	{
 		_putchar('-');
+		l += 1;
 		num *= -1;
 	}
-	_print_int((unsigned int) num, 100000000, 0);
-	return (0);
+	l += _print_int((unsigned int) num, 100000000, 0);
+	return (l);
 }
