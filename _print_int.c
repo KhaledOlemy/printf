@@ -12,11 +12,7 @@
 int _print_int(unsigned int num, unsigned int iter, int flag)
 {
 	int i = 0;
-	if (!num)
-	{
-		_putchar('0');
-		return (1);
-	}
+
 	if (iter != 1)
 	{
 		iter /= 10;
