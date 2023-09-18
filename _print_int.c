@@ -7,44 +7,44 @@
  * @flag: to tell the code, are we still overhead getting zeros (to neglect),
  * or are we in the number boundaries
  *
- * Return: (0) always success
+ * Return: length of characters printed
  */
 int _print_int(unsigned int num, unsigned int iter, int flag)
 {
-	int l = 0;
+	int i = 0;
 
 	if (iter != 1)
 	{
 		iter /= 10;
 		if (num / iter == 0 && flag == 0)
 		{
-			_print_int(num, iter, 0);
+			i += _print_int(num, iter, 0);
 		}
 		else
 		{
 			flag = 1;
 			if (num / iter == 0)
 			{
-				l += 1;
+				i += 1;
 				_putchar(0 + '0');
 			}
 			else
 			{
 				if ((num / iter) > 10)
 				{
+					i += 2;
 					_putchar((num / iter) / 10 + '0');
 					_putchar((num / iter) % 10 + '0');
-					l += 2;
 				}
 				else
 				{
+					i += 1;
 					_putchar((num / iter) + '0');
-					l += 1;
 				}
 			}
 			num %= iter;
-			_print_int(num, iter, 1);
+			i += _print_int(num, iter, 1);
 		}
 	}
-	return (l);
+	return (i);
 }

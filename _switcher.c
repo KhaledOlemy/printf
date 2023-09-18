@@ -7,7 +7,7 @@
  * @item: va_list item to pickup the value from va arguments
  * @len: to determine string length
  *
- * Return: (0) always success
+ * Return: length of characters printed
  */
 int _switcher(const char *s, int i, va_list item, int len)
 {
@@ -27,23 +27,24 @@ int _switcher(const char *s, int i, va_list item, int len)
 		flags += 1;
 		break;
 	case 'd': case 'i':
-		_print_signed_int(va_arg(item, int));
+		len += _print_signed_int(va_arg(item, int));
 		break;
 	case 'u':
-		_print_int(va_arg(item, unsigned int), 1000000000, 0);
+		len += _print_int(va_arg(item, unsigned int), 1000000000, 0);
 		break;
 	case 'x':
-		_print_hexa(va_arg(item, unsigned int), 268435456, 0, 'x');
+		len += _print_hexa(va_arg(item, unsigned int), 268435456, 0, 'x');
 		break;
 	case 'X':
-		_print_hexa(va_arg(item, unsigned int), 268435456, 0, 'X');
+		len += _print_hexa(va_arg(item, unsigned int), 268435456, 0, 'X');
 		break;
 	case 'b':
-		_print_binary(va_arg(item, int));
+		len += _print_binary(va_arg(item, int));
 		break;
 	default:
 		_putchar('%');
 		_putchar(s[i + 1]);
+		len += 2;
 		break;
 	}
 	return (len + flags - 2);

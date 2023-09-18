@@ -4,11 +4,11 @@
  * numbers and then calls other function with positive value
  * @num: input decimal number to print
  *
- * Return: (0) always success
+ * Return: length of characters printed
  */
 int _print_signed_int(int num)
 {
-	int l = 0;
+	int l = 0, temp;
 
 	if (num < 0)
 	{
@@ -16,6 +16,14 @@ int _print_signed_int(int num)
 		l += 1;
 		num *= -1;
 	}
-	l += _print_int((unsigned int) num, 100000000, 0);
+	temp = _print_int((unsigned int) num, 100000000, 0);
+	if (temp == 0)
+	{
+		l += 1;
+	}
+	else
+	{
+		l += temp;
+	}
 	return (l);
 }

@@ -3,7 +3,7 @@
  * _print_string - sub function of _printf to print strings
  * @s: input string to print
  *
- * Return: length of the input string
+ * Return: length of characters printed
  */
 int _print_string(char *s)
 {
