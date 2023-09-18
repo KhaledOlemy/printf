@@ -5,9 +5,10 @@
  *
  * Return: length of characters printed
 */
-int _print_binary(int n)
+int _print_binary(unsigned int n)
 {
-	int j, i = 0, binary[32], l = 0;
+	int i = 0, j;
+	unsigned int binary[64], l = 0;
 
 	while (n > 0)
 	{
