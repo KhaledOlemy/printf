@@ -29,9 +29,9 @@ on.
 	    			->	_putchar
 	    s, S, r, R:		_string_navigator
 	       	     		->	_print_string
-				->	_print_rev
-				->	_print_rot13
-				->	_special_str
+					->	_print_rev
+					->	_print_rot13
+					->	_special_str
 	    %: 	     		_print_char
 	    			->	_print_char
 	    d, i:		_print_signed_int
@@ -44,10 +44,10 @@ on.
 	    b:			_print_binary
 	    			->	_print_char
 	    o:			_print_octal
-				->	_print_char
+					->	_print_char
 	    p:			_print_address
 	    			->	_print_string
-				->	_print_char
+					->	_print_char
 	    Other undefined:	_print_char
 
 Code Functionality:
