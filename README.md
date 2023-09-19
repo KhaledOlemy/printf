@@ -1,7 +1,8 @@
-First project in C trying build printf by ourselves while maintaining
-Betty Style and Betty Doc.
+# Custom Self-made PRINTF
+## First project in C trying build printf by ourselves while maintaining
+## Betty Style and Betty Doc.
 
-__Team__:  
+**Team**:  
 1- __Khaled__ Olemy   
 2- __Mostafa__ Mohamed   
 
