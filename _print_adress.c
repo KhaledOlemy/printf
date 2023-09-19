@@ -26,10 +26,9 @@ int _print_address(unsigned long int addr)
 			hex[i] = 'a' + (digit - 10);
 		}
 		addr /= 16;
-		i++;
+		i--;
 	}
 	out += _print_char('0');
-	out += _print_char('x');
 	for (i--; i >= 0; i--)
 	{
 		out += _print_char(hex[i]);
