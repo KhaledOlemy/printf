@@ -13,11 +13,11 @@ int _unsigned_checker(unsigned int num)
 	if (!num)
 	{
 		_putchar('0');
-		len += 1;
 	}
 	else
 	{
-		len += _print_int(num, 1000000000, 0);
+		len += _print_int(num, 1000000, 0);
+		_putchar('0');
 	}
 	return (len);
 }
