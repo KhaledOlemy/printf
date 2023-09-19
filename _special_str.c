@@ -20,11 +20,11 @@ int _special_str(char *s)
 				_putchar('0');
 			}
 			l += 1;
-			putchar('\0');
+			putchar(NULL);
 		}
 		else
 		{
-			_print_char(s[i]);
+			_print_char(s[0]);
 		}
 		i++;
 	}
