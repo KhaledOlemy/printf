@@ -16,9 +16,9 @@ We built:<br>
 13- Sub-function  to print strings in reverse (r). <br>
 14- Sub-function  to print strings in rot13 format (R). <br>
 
-Code Assembly:
+Code Assembly and Structure:
 
-1. I built main function to loop on the main format string, using variadic
+1. We built main function to loop on the main format string, using variadic
  functions.
 2. I built a switcher function, to redirect each specifier to it's functi-
 on.
@@ -29,25 +29,25 @@ on.
 	    			->	_putchar
 	    s, S, r, R:		_string_navigator
 	       	     		->	_print_string
-					->	_print_rev
-					->	_print_rot13
-					->	_special_str
+				->	_print_rev
+				->	_print_rot13
+				->	_special_str
 	    %: 	     		_print_char
-	    			->	_print_char
+				->	_print_char
 	    d, i:		_print_signed_int
-	    			->	_print_int
+				->	_print_int
 	    u:			_unsigned_checker
-	    			->	_print_char
+				->	_print_char
 				->	_print_int
 	    x, X:		_print_hexa
-	    			->	_print_hex_item
+				->	_print_hex_item
 	    b:			_print_binary
-	    			->	_print_char
+				->	_print_char
 	    o:			_print_octal
-					->	_print_char
+				->	_print_char
 	    p:			_print_address
-	    			->	_print_string
-					->	_print_char
+				->	_print_string
+				->	_print_char
 	    Other undefined:	_print_char
 
 Code Functionality:
