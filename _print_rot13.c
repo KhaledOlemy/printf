@@ -11,6 +11,10 @@ int _print_rot13(char *s)
 	int i, j, l = 0;
 	char *s1, *s2;
 
+	if (!s)
+	{
+		return (_print_string("(nil)"));
+	}
 	i = 0;
 	s1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	s2 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
