@@ -16,15 +16,13 @@ int _switcher(const char *s, int i, va_list item, int len)
 	switch (s[i + 1])
 	{
 	case 'c':
-		_putchar(va_arg(item, int));
-		flags += 1;
+		len += _print_char(va_arg(item, int));
 		break;
 	case 's':
 		len += _print_string(va_arg(item, char *));
 		break;
 	case '%':
-		_putchar('%');
-		flags += 1;
+		len += _print_char('%');
 		break;
 	case 'd': case 'i':
 		len += _print_signed_int(va_arg(item, int));
@@ -44,10 +42,12 @@ int _switcher(const char *s, int i, va_list item, int len)
 	case 'o':
 		len += _print_octal(va_arg(item, unsigned int), 1073741824, 0);
 		break;
+	case 'p':
+		len += _print_address(va_arg(item, unsigned long int));
+		break;
 	default:
-		_putchar('%');
-		_putchar(s[i + 1]);
-		len += 2;
+		len += _print_char('%');
+		len += _print_char(s[i + 1]);
 		break;
 	}
 	return (len + flags - 2);

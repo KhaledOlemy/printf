@@ -16,4 +16,6 @@ int _switcher(const char *s, int i, va_list item, int len);
 int _print_binary(unsigned int n);
 int _print_octal(unsigned int num, unsigned int iter, int flag);
 int _unsigned_checker(unsigned int num);
+int _print_address(unsigned long int num);
+int _print_char(char c);
 #endif

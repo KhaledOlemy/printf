@@ -16,7 +16,7 @@ int _print_string(char *s)
 	}
 	while (s[i] != '\0')
 	{
-		_putchar(s[i]);
+		_print_char(s[i]);
 		i++;
 	}
 	return (i);
