@@ -13,6 +13,14 @@ int _string_navigator(char c, char *s)
 	{
 		return (_print_string(s));
 	}
+	else if (c == 'r')
+	{
+		return (_print_rev(s));
+	}
+	else if (c == 'R')
+	{
+		return (_print_rot13(s));
+	}
 	else
 	{
 		return (_special_str(s));

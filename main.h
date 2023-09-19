@@ -20,4 +20,6 @@ int _print_address(unsigned long int num);
 int _print_char(char c);
 int _special_str(char *s);
 int _string_navigator(char c, char *s);
+int _print_rot13(char *s);
+int _print_rev(char *s);
 #endif
