@@ -9,7 +9,7 @@ int _special_str(char *s)
 {
 	int i = 0, j, l = 0;
 
-	while (s[i] != '\0')
+	while (s[i] != NULL)
 	{
 		j = (int) s[i];
 		if (j < 32 || j >= 127)
