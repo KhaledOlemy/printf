@@ -12,7 +12,7 @@ int _print_rot13(char *s)
 
 	if (!s)
 	{
-		return (_print_string("(nil)"));
+		return (_print_string("0"));
 	}
 	while (s[i] != '\0')
 	{
@@ -22,7 +22,7 @@ int _print_rot13(char *s)
 		}
 		else if ((s[i] >= 'N' && s[i] <= 'Z') || (s[i] >= 'n' && s[i] <= 'z'))
 		{
-			l += _print_char(s[i] - 13);
+			l += _print_char(s[i] - 11);
 		}
 		else
 		{
