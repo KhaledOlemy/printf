@@ -19,8 +19,8 @@ int _special_str(char *s)
 			{
 				_putchar('0');
 			}
-			_print_hexa((int) j, 268435456, 0, 'X');
 			l += 1;
+			putchar('\0');
 		}
 		else
 		{
