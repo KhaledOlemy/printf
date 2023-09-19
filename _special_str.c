@@ -12,7 +12,7 @@ int _special_str(char *s)
 	while (s[i] != NULL)
 	{
 		j = (int) s[i];
-		if (j < 32 || j >= 127)
+		if (j < 30 || j >= 127)
 		{
 			_print_string("\\x");
 			if (j < 16)
@@ -24,6 +24,7 @@ int _special_str(char *s)
 		}
 		else
 		{
+			_putchar('\0');
 			_print_char(s[0]);
 		}
 		i++;
