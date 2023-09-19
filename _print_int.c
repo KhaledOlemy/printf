@@ -21,10 +21,7 @@ int _print_int(unsigned int num, unsigned int iter, int flag)
 			i += _print_int(num, iter, 0);
 		}
 		else
-		{
 			flag = 1;
-			if (num / iter == 0)
-			{
 				i += 1;
 				_putchar(0 + '0');
 			}
