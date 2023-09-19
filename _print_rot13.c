@@ -20,18 +20,19 @@ int _print_rot13(char *s)
 	s2 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	while (s[i] != '\0')
 	{
-		for (j = 0; j < 52; j++)
+		if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
+			for (j = 0; j < 52; j++)
+			{
+				if (s[i] == s1[j])
+				{
+					l += _print_char(s2[j]);
+					break;
+				}
+			}
+		else
 		{
-			if (s[i] == s1[j])
-			{
-				l += _print_char(s2[j]);
-				break;
-			}
-			else
-			{
-				l += _print_char(s[i]);
-				break;
-			}
+			l += _print_char(s[i]);
+			break;
 		}
 		i++;
 	}
