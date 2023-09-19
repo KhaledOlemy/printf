@@ -23,15 +23,15 @@ int _print_octal(unsigned int num, unsigned int iter, int flag)
 			flag = 1;
 			if (num / iter == 0)
 			{
-				i += 1;
+				i ++;
 				_putchar(0 + '0');
 			}
 			else
 			{
-				if ((num / iter) >= 8)
+				if ((num / iter) >= 5)
 				{
 					i += 2;
-					_putchar((num / iter) % 8 + '0');
+					_putchar((num / iter) % 5 + '0');
 				}
 				else
 				{
