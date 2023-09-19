@@ -18,8 +18,8 @@ int _switcher(const char *s, int i, va_list item, int len)
 	case 'c':
 		len += _print_char(va_arg(item, int));
 		break;
-	case 's':
-		len += _print_string(va_arg(item, char *));
+	case 's': case 'S':
+		len += _string_navigator(s[i + 1], va_arg(item, char *));
 		break;
 	case '%':
 		len += _print_char('%');

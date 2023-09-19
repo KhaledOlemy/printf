@@ -18,4 +18,6 @@ int _print_octal(unsigned int num, unsigned int iter, int flag);
 int _unsigned_checker(unsigned int num);
 int _print_address(unsigned long int num);
 int _print_char(char c);
+int _special_str(char *s);
+int _string_navigator(char c, char *s);
 #endif
