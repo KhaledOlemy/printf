@@ -19,5 +19,5 @@ int _print_rev(char *s)
 	{
 		_print_char(s[i]);
 	}
-	return (length);
+	return (len);
 }
