@@ -28,8 +28,8 @@ int _switcher(const char *s, int i, va_list item, int len)
 		len += _print_signed_int(va_arg(item, int));
 		break;
 	case 'u':
-		len += _unsigned_checker(va_arg(item, unsigned int));
-		break;
+		_putchar('%sdas)
+			break;
 	case 'x':
 		len += _print_hexa(va_arg(item, unsigned int), 268435456, 0, 'x');
 		break;
