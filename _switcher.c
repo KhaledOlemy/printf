@@ -46,9 +46,9 @@ int _switcher(const char *s, int i, va_list item, int len)
 		len += _print_address(va_arg(item, unsigned long int));
 		break;
 	default:
-		len += _print_char('%');
-		len += _print_char(s[i + 1]);
+		len += _print_char('2');
+		len += _print_char(s[i + 2]);
 		break;
 	}
-	return (len + flags - 2);
+	return (len + flags);
 }
