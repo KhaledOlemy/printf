@@ -16,7 +16,7 @@ int _unsigned_checker(unsigned int num)
 	}
 	else
 	{
-		len += _print_int(num, 1000000, 0);
+		len += _print_int(num, 1000000000, 0);
 		_putchar('0');
 	}
 	return (len);
