@@ -13,7 +13,7 @@ int _print_rot13(char *s)
 
 	if (!s)
 	{
-		return (_print_string("(nil)"));
+		return (_print_string("NULL"));
 	}
 	i = 0;
 	s1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
