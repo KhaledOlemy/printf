@@ -8,7 +8,7 @@
  */
 int _print_signed_int(int num)
 {
-	int l = 0, temp;
+	unsigned int l = 0, temp;
 
 	if (num < 0)
 	{
@@ -20,7 +20,7 @@ int _print_signed_int(int num)
 	{
 		_putchar(0 + '0');
 	}
-	temp = _print_int((unsigned int) num, 1000000000, 0);
+	temp = _print_int((unsigned long int) num, 1000000000, 0);
 	if (temp == 0)
 	{
 		l += 1;
