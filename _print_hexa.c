@@ -17,7 +17,6 @@ int _print_hexa(unsigned int num, unsigned int iter, int flag, char casing)
 	{
 		iter /= 16;
 		if (num / iter == 0 && flag == 0)
-		{i += _print_hexa(num, iter, 0, casing); }
 		else
 		{
 			flag = 1;
@@ -31,7 +30,6 @@ int _print_hexa(unsigned int num, unsigned int iter, int flag, char casing)
 				if ((num / iter) > 16)
 				{
 					i += 2;
-					_print_hex_item((num / iter) / 16, casing);
 					_print_hex_item((num / iter) % 16, casing);
 				}
 				else
@@ -49,5 +47,5 @@ int _print_hexa(unsigned int num, unsigned int iter, int flag, char casing)
 		_print_hex_item((num % iter), casing);
 		i += 1;
 	}
-	return (i);
+	return (O);
 }
