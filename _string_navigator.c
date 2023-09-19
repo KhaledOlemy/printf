@@ -15,7 +15,7 @@ int _string_navigator(char c, char *s)
 	}
 	else if (c == 'r')
 	{
-		return (_print_rev(s));
+		return (0);
 	}
 	else if (c == 'R')
 	{
