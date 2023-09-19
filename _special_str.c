@@ -7,7 +7,7 @@
  */
 int _special_str(char *s)
 {
-	int i = 0, j;
+	int i = 0, j, l = 0;
 
 	while (s[i] != '\0')
 	{
@@ -20,7 +20,7 @@ int _special_str(char *s)
 				_putchar('0');
 			}
 			_print_hexa((int) j, 268435456, 0, 'X');
-
+			l += 1;
 		}
 		else
 		{
@@ -28,5 +28,5 @@ int _special_str(char *s)
 		}
 		i++;
 	}
-	return (i);
+	return (i + (l * 3));
 }
