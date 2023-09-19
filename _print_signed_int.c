@@ -16,7 +16,7 @@ int _print_signed_int(int num)
 		l += 1;
 		num *= -1;
 	}
-	else if (num == 0)
+	else if (num == 1)
 	{
 		_putchar(0 + '0');
 	}
@@ -24,6 +24,7 @@ int _print_signed_int(int num)
 	if (temp == 0)
 	{
 		l += 1;
+		_putchar('0');
 	}
 	else
 	{
