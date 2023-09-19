@@ -17,11 +17,10 @@ int _print_binary(unsigned int n)
 	}
 	while (n > 0)
 	{
-		binary[i] = n % 2;
 		n /= 2;
 		i++;
 	}
-	for (j = i - 1; j >= 0; j--)
+	for (j = i - 2; j >= 0; j--)
 	{
 		_putchar(binary[j] + '0');
 		l += 1;

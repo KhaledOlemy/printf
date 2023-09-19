@@ -11,11 +11,11 @@
 int _printf(const char *format, ...)
 {
 	int i = 0, len = 0;
-	va_list iterator;
+	va_list format;
 
 	if (!format)
 	{
-		return (-1);
+		return (0);
 	}
 	va_start(iterator, format);
 	while (format[i] != '\0')
