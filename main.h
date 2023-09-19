@@ -22,4 +22,5 @@ int _special_str(char *s);
 int _string_navigator(char c, char *s);
 int _print_rot13(char *s);
 int _print_rev(char *s);
+return 0;
 #endif
