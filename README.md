@@ -53,8 +53,9 @@ on.
 
 Code Functionality:
 
-	You can test against this code below
-    	||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+You can test against this code below
+	
+ 	||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 	#include <limits.h>
 	#include <stdio.h>
 	#include "main.h"
