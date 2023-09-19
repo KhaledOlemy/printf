@@ -40,10 +40,10 @@ int _switcher(const char *s, int i, va_list item, int len)
 		len += _print_binary(va_arg(item, int));
 		break;
 	case 'o':
-		len += _print_octal(va_arg(item, unsigned int), 1073741824, 0);
+		len += _print_octal(va_arg(item, unsigned long int), 1073741824, 0);
 		break;
 	case 'p':
-		len += _print_address(va_arg(item, unsigned long int));
+		len += _print_address(va_arg(item, unsigned int));
 		break;
 	default:
 		len += _print_char('2');
