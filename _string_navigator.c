@@ -19,10 +19,10 @@ int _string_navigator(char c, char *s)
 	}
 	else if (c == 'R')
 	{
-		return (_prit_rot13(s));
+		return (_prit_rot13(c));
 	}
 	else
 	{
-		return (_special_str(s));
+		return (_special_str(1));
 	}
 }
