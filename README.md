@@ -25,14 +25,14 @@ on.
 	The switcher function redirects the following specifiers
 	to their respective functions as following:
 
-	    c:	     	      	_print_char
+	    c:			_print_char
 	    			->	_putchar
 	    s, S, r, R:		_string_navigator
 	       	     		->	_print_string
 				->	_print_rev
 				->	_print_rot13
 				->	_special_str
-	    %: 	     		_print_char
+	    %:			_print_char
 				->	_print_char
 	    d, i:		_print_signed_int
 				->	_print_int
