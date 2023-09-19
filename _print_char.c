@@ -4,9 +4,9 @@
  * @c: input char to print
  *
  */
-int _print_char(char c)
+int _print_char(char s)
 {
-	_putchar(c);
-	return (0);
+	_putchar(s);
+	return (1);
 	
 }
