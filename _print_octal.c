@@ -31,7 +31,6 @@ int _print_octal(unsigned int num, unsigned int iter, int flag)
 				if ((num / iter) >= 8)
 				{
 					i += 2;
-					_putchar((num / iter) / 8 + '0');
 					_putchar((num / iter) % 8 + '0');
 				}
 				else
@@ -49,5 +48,5 @@ int _print_octal(unsigned int num, unsigned int iter, int flag)
 	_putchar(num + '0');
 	i += 1;
 	}
-	return (i);
+	return (o);
 }
