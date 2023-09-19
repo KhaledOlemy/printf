@@ -8,31 +8,25 @@
  */
 int _print_rot13(char *s)
 {
-	int i, j, l = 0;
-	char *s1, *s2;
+	int i = 0, l = 0;
 
 	if (!s)
 	{
-		return (_print_string("NULL"));
+		return (_print_string("(nil)"));
 	}
-	i = 0;
-	s1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	s2 = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	while (s[i] != '\0')
 	{
-		if ((s[i] >= 'A' && s[i] <= 'Z') || (s[i] >= 'a' && s[i] <= 'z'))
-			for (j = 0; j < 52; j++)
-			{
-				if (s[i] == s1[j])
-				{
-					l += _print_char(s2[j]);
-					break;
-				}
-			}
+		if ((s[i] >= 'A' && s[i] <= 'M') || (s[i] >= 'a' && s[i] <= 'm'))
+		{
+			l += _print_char(s[i] + 13);
+		}
+		else if ((s[i] >= 'N' && s[i] <= 'Z') || (s[i] >= 'n' && s[i] <= 'z'))
+		{
+			l += _print_char(s[i] - 13);
+		}
 		else
 		{
 			l += _print_char(s[i]);
-			break;
 		}
 		i++;
 	}
