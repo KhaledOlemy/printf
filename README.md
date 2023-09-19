@@ -1,20 +1,20 @@
 First project in C trying build printf by ourselves while maintaining
 Betty Style and Betty Doc.
 
-*Team*:
-1- Khaled Olemy   
-2- Mostafa Mohamed   
+__Team__:  
+1- __Khaled__ Olemy   
+2- __Mostafa__ Mohamed   
 
-We built:
+We built:<br>
 
-0-  Sub-functions to print characters (c), strings (s), and (%). 
-1-  Sub-functions to print digits (d, i). 
-2-  Sub-function  to print binary (b). 
-3-  Sub-functions to print unsigned (u), octals (o), and hexadecimals (x, X). 
-5-  Sub-function  to print Special strings (S). 
-6-  Sub-function  to print Addresses in memory (p). 
-13- Sub-function  to print strings in reverse (r). 
-14- Sub-function  to print strings in rot13 format (R). 
+0-  Sub-functions to print characters (c), strings (s), and (%). <br>
+1-  Sub-functions to print digits (d, i). <br>
+2-  Sub-function  to print binary (b). <br>
+3-  Sub-functions to print unsigned (u), octals (o), and hexadecimals (x, X). <br>
+5-  Sub-function  to print Special strings (S). <br>
+6-  Sub-function  to print Addresses in memory (p). <br>
+13- Sub-function  to print strings in reverse (r). <br>
+14- Sub-function  to print strings in rot13 format (R). <br>
 
 Code Assembly:
 
