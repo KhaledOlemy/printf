@@ -27,6 +27,11 @@ int _print_rot13(char *s)
 				l += _print_char(s2[j]);
 				break;
 			}
+			else
+			{
+				l += _print_char(s[i]);
+				break;
+			}
 		}
 		i++;
 	}
