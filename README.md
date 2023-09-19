@@ -2,8 +2,8 @@ First project in C trying build printf by ourselves while maintaining
 Betty Style and Betty Doc.
 
 *Team*:
-1- Khaled Olemy 
-2- Mostafa Mohamed 
+1- Khaled Olemy   
+2- Mostafa Mohamed   
 
 We built:
 
